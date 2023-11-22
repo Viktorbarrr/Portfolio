@@ -22,7 +22,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: pink;
+    background-color: rgba(242, 250, 246, 0.813);
 }
 
 .main {
@@ -38,12 +38,15 @@ body {
 .header, .site-header {
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    border-bottom: solid #444;
 }
 
 /* Title */
 
 .title, .logo {
     padding: 3em 3em 3em 0;
+    width: 15%;
 }
 
 @media (max-width: 767px) {
@@ -66,16 +69,44 @@ body {
     font-style: italic;
 }
 
+.nav a {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    border-bottom: 4px solid rgb(70, 70, 70);
+} 
+
+/* Main */
+
+.main {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.main p img {
+    max-width: 40%;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1em;
+}
+
 /* Footer */
 
 .footer {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #222;
+    border-top: 4px solid #ffffff;
+    background-color: #867777;
+    color: #fff;
+    padding: 4rem 6rem;
 }
 
 .footer a {
-    color: #222;
+    color: #fff;
 }
 
 .footer .social {
@@ -86,7 +117,7 @@ body {
 
 body {
     font-family: sans-serif;
-    line-height: 1.5rem;
+    line-height: 1.5;
     color: #444;
 }
 
